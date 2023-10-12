@@ -7,10 +7,13 @@ import {PiDotsNineBold} from 'react-icons/pi'
 
 const Navbar = () => {
   //state to track and update navbar
-  const [navBar, setNavBar] = useState('menu');
+  const [navBar, setNavBar] = useState('menu'); 
+  // const [isVisible, setIsVisible] = useState(false);
+
   //Function to show navbar
   const showNavBar = () => {
     setNavBar("menu showNavBar");
+    // setIsVisible(true);
   }
   //function to remove navbar
   const removeNavBar = () => {
@@ -32,6 +35,11 @@ const Navbar = () => {
         <li className="navList">Testimonial</li>
         <li className="navList">Gallery</li>
       </ul>
+      {/* {
+        isVisible ?
+     
+      : ''
+      } */}
       <AiFillCloseCircle className="icon closeIcon" onClick={removeNavBar}/>
     </div>
     

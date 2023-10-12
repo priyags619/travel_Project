@@ -15,10 +15,14 @@ const Home = () => {
         <p>Discover the world's most adventurous nature, Life is so short for a trip.</p>
       <button className='btn flex'>GET STARTED <AiOutlineSwapRight className="icon"/></button>
       </div>
+
       <div className="popularPlaces">
         <div className="content">
           <h1>Popular places</h1>
-          <div className="images flex"></div>
+          <div className="images flex">
+            {/* <img src="" alt="" />
+            <img src="" alt="" /> */}
+          </div>
         </div>
       </div>
     </div>

@@ -21,9 +21,9 @@
     --smallestFontSize: 0.75rem;
     --borderRadius: 3rem;
 }
-.btn{
-    background: var(--primaryColor);
-}
+// .btn{
+//     background: var(--primaryColor);
+// }
 .Home{
     position: relative;
     height: 95vh;
@@ -43,7 +43,7 @@
     }
     .sectionText{
         position: absolute;
-        height: 10%;
+        height: 100%;
         top: 30%;
         bottom: 50%;
         color: var(--whiteColor);

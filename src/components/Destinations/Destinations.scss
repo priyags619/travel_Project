@@ -13,8 +13,8 @@ root{
 
     /*Font and topography*/
     --biggestFontSize: 2.5rem;
-    --h1FontSize: 1.5rem;
-    --h2FontSize: 1.6rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
     --h3FontSize: 1rem;
     --normalFontSize: 0.938rem;
     --smallFontSize: 0.813rem;
@@ -29,10 +29,10 @@ root{
             font-weight: 500;
         }
         h3{
-            font-size: var(--h2FontSize);
+            font-size: var(--h1FontSize);
         }
         .searchField{
-            margin-top: 2rem;
+            margin-top: 0rem;
             gap: .1rem;
             .inputField{
                 background: var(--primaryColorLight);
@@ -51,15 +51,22 @@ root{
                     color: var(--blackColor);
                 }
             }
+            
             .btn{
-                gap: .8rem;
+                gap: .2rem;
+                margin: auto;
                 margin-top: 8px;
                 width: 100%;
-                align-items: center;
-                justify-content: center;
+                align-items: start;
+                justify-content: start;
                 background-color: var(--primaryColor);
                 border-radius: var(--borderRadius);
                 padding: 1rem;
+
+                &:hover{
+                    color: var(--primaryColor);
+                    background: rgba(94, 49, 58, 0.377);
+                }
             }
         }
         .secMenu{
@@ -83,6 +90,8 @@ root{
                         width: 100%;
                         object-fit: cover;
                         transition: all .3s ease-in-out;
+                        
+                
                     }
                 }
                 &:hover{
@@ -93,7 +102,7 @@ root{
                     }
                 }
                 .descInfo{
-                    position: relative;
+                    position: absolute;
                     z-index: 2;
                     bottom: 0;
                     width: 100%;
@@ -106,11 +115,40 @@ root{
                         top: 0;
                         right: 0;
                         left: 0;
+                        bottom: 0;
                         background: linear-gradient(
                             to bottom,
                             rgba(0, 0, 0, 0),
                             rgba(0, 0, 0, 0.76)
                         );
+                        z-index: -1;
+                    }
+
+                    .text{
+                        gap: .5rem;
+                        color: var(--whiteColor);
+
+                        .name{
+                            display: block;
+                            font-weight: 500;
+                            padding-bottom: .3rem;
+                            font-weight: var(--h2FontSize);
+                            
+                            
+                        }
+                        .flex, .icon{
+                            font-size: var(--normalFontSize);
+                        }
+                    }
+                    .rating{
+                        padding: 8px 1rem;
+                        border-radius: var(--borderRadius);
+                        background: rgba(245, 245, 245, 0.37);
+                        border: 1.5px solid rgba(255, 255, 255, 0.241);
+                        font-size: var(--h3FontSize);
+                        font-weight: 600;
+                        color: var(--whiteColor);
+                        
                     }
                 }
             }
