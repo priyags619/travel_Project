@@ -5,6 +5,9 @@ import imagea from '../../Assets/image(1).jpg'
 import imageb from '../../Assets/image(2).jpg'
 import imagec from '../../Assets/image(5).jpg'
 import imaged from '../../Assets/image(8).webp'
+import imagee from '../../Assets/image(11).jpg'
+
+
 
 
 const Reviews = () => {
@@ -26,12 +29,15 @@ const Reviews = () => {
           <AiFillStar className="icon"/>
           </span>
           <div className="clientsImages flex">
-            <img src={imagea} alt="" />
-            <img src={imageb} alt="" />
-            <img src={imagec} alt="" />
-            <img src={imaged} alt="" />
+            <img src={imagea} alt="Client Image" />
+            <img src={imageb} alt="Client Image" />
+            <img src={imagec} alt="Client Image" />
+            <img src={imaged} alt="Client Image" />
 
           </div>
+        </div>
+        <div className="imgDiv">
+          <img src={imagee} alt="Div image" />
         </div>
       </div>
     </div>

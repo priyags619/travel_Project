@@ -32,8 +32,8 @@ root{
             font-size: var(--h1FontSize);
         }
         .searchField{
-            margin-top: 0rem;
-            gap: .1rem;
+            margin-top: 2rem;
+            gap: 1rem;
             .inputField{
                 background: var(--primaryColorLight);
                 padding: 1rem;
@@ -155,4 +155,21 @@ root{
         }
     }
 
+}
+
+@media screen and (min-width: 520px){
+    .destination{
+        .secContainer{
+            .searchField{
+                grid-template-columns: repeat(2, fr);
+            }
+            .destinationContainer{
+                
+                grid-template-columns: repeat(2, 1fr);
+
+                 
+            }
+        }
+    }
+    
 }

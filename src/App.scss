@@ -14,7 +14,7 @@ root{
     --blackColor: hsl(0, 0%, 18%);
     --greyColor: hsl(0, 0%, 51%);
     --inputColor: hsl(330, 12%, 97%);
-    --cardColor: hsl(300, 3%, 94%);
+    --cardColor: hsl(300, 67%, 1%);
 
     /*Font and topography*/
     --biggestFontSize: 2.5rem;
@@ -127,6 +127,15 @@ img,video{
     border-radius: var(--borderRadius);
 }
 
+@media screen and (min-width : 840px) {
+    .section{
+        padding: 4rem 0 3rem;
+    }
+    .container{
+        width: 75%;
+        margin: auto;
+    }
+}
 
 
 
