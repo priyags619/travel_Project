@@ -81,6 +81,7 @@ const Destinations = () => {
   return (
     <div className="destination section container">
       <div className="secContainer">
+        
         <div className="secTitle">
             <span className="redText">EXPLORE NOW</span>
             <h3>Find Your Dream Destination</h3>
@@ -106,6 +107,7 @@ const Destinations = () => {
           <button className="btn flex"><BiSearchAlt
           className='icon'/>Search
           </button>
+          </div>
 
           <div className="secMenu">
             <ul className="flex">
@@ -141,7 +143,7 @@ const Destinations = () => {
         </div>
 
       </div>
-      </div>
+      
     
   )
 }

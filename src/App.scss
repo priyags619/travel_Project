@@ -72,13 +72,13 @@ img,video{
     
 
     &:hover{
-        transition: .3s ease;
+        transition: .5s ease;
     }
 }
 
 
 .secTitle{
-    // display: none;
+    display: grid;
     text-align: start;
     padding: 1rem 0;
     font-size: 25px;
@@ -93,6 +93,7 @@ img,video{
         font-size: var(--normalFontSize);
         font-weight: 400;
     }
+  
 }
 .secHeading{
     padding-bottom: 1.5rem;
@@ -106,7 +107,7 @@ img,video{
     background: var(--whiteColor);
 }
 .section{
-    padding: 0rem 0 0rem;
+    padding: 3rem 0 0rem;
 }
 .container{
     padding-left: 1.5rem;
@@ -129,7 +130,7 @@ img,video{
 
 @media screen and (min-width : 840px) {
     .section{
-        padding: 4rem 0 3rem;
+        padding: 4rem 0 1rem;
     }
     .container{
         width: 75%;
